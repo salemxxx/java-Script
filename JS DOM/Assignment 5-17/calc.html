@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+    <style>
+     body {
+         font-size: 64px;
+         background-color: black;
+         }
+    .container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 80px 80px 80px 80px;
+        grid-template-rows: 80px 80px;
+        grid-template-areas: 
+        "header header header header" 
+        "main main main main" 
+        "main main main main" 
+        "main main main main" 
+        "main main main main" 
+        "main main main main";
+        }
+.item-header {
+  grid-area: header;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  background-color: black;
+  color: white;
+  text-align: right;
+}
+.btn {
+  background-color: dimgray;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
+.silver {
+  background-color: silver;
+  color: black;
+}
+.orange {
+  background-color: orange;
+}
+button {
+  font-size: 26px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-header" id ='out'>0</div>
+        
+        <button class="btn silver" id = 'clear'>AC</button>
+        <button class="btn silver">+/-</button>
+        <button class="btn silver">%</button>
+        <button class="btn orange" id = '/'>÷</button>
+        
+        <button class="btn" id = '7'>7</button>
+        <button class="btn" id = '8'>8</button>
+        <button class="btn" id = '9'>9</button>
+        <button class="btn orange" id = '*'>X</button>
+        
+        <button class="btn" id = '4'>4</button>
+        <button class="btn" id = '5'>5</button>
+        <button class="btn" id = '6'>6</button>
+        <button class="btn orange" id = '-'>-</button>
+        
+        <button class="btn" id ='1'>1</button>
+        <button class="btn" id = '2'>2</button>
+        <button class="btn" id = '3'>3</button>
+        <button class="btn orange" id = 'sum'>+</button>
+        
+        <button class="btn" id = '0'>0</button>
+        <button class="btn" id = '0'>0</button>
+        <button class="btn">.</button>
+        <button class="btn orange" id ='='>=</button>
+        </div>
+        <script src="js1.js"></script>
+
+        
+</body>
+</html>
